@@ -135,7 +135,6 @@ export fn next(
 			};
 		} else {
 			s.args = void: invalid_command_args;
-			void;
 		};
 
 		return (s.name, s.args);
