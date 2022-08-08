@@ -1,0 +1,16 @@
+<!--
+© 2022 Vlad-Stefan Harbuz <vlad@vladh.net>
+SPDX-License-Identifier: MIT
+-->
+
+format::obj provides a parser for the Wavefront .obj file format. To parse a
+file, create a [[scanner]] with the [[scan]] method, then get each element of
+the file by calling [[next]]. When you're done, free the [[scanner]] with
+[[finish]].
+
+Currently supported commands:
+
+* Vertices (`v`)
+* Texture coordinates (`vt`)
+* Normals (`vn`)
+* Faces (`f`)
